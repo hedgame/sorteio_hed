@@ -1,10 +1,13 @@
 package com.example.myapplication
 
-import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import kotlin.random.Random
+import android.view.View
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,4 +20,10 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
+    fun sortear (view: View) {
+        val textResultado = findViewById<TextView>(R.id.resuladoresultante)
+        val numero = Random.nextInt(11) //de 0 a 10
+        textResultado.setText("Numero Sorteado: $numero")
+    }
+
 }
