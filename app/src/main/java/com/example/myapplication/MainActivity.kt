@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     }
     fun sortear (view: View) {
         val textResultado = findViewById<TextView>(R.id.resuladoresultante)
-        val numero = Random.nextInt(11) //de 0 a 10
+        val numero = Random.nextInt(11) // de 0 a 10
         textResultado.setText("Numero Sorteado: $numero")
     }
 
